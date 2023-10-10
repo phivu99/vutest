@@ -1,0 +1,183 @@
+@use '../abstracts/' as *;
+
+// swiper slider 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.swiper-button-next:after {
+    content: "\f077";
+}
+
+.swiper-button-prev:after {
+    content: "\f078";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 99;
+    @include transition3;
+    background: unset;
+    position: relative;
+    border: unset;
+    width: unset;
+    height: unset;
+    left: 65px;
+    &:hover,
+    &.swiper-button-disabled {
+        background: unset;
+        opacity: 1;
+        &::after {
+            color: $color-3;
+        }
+    }
+    &::after {
+        color: $color-2;
+    }
+}
+
+.swiper-button-next {
+    margin-bottom: 45px;
+}
+
+ .swiper-button-prev {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 39px;
+        margin-bottom: -84px;
+        background-color: #b8a47e;
+    }
+   
+}
+
+//  swiper pagination slider
+.button-custom-slider {
+    position: absolute;
+    top: 29%;
+    left: 39px;
+}
+.pagi-slider {
+    .swiper-pagination {
+        position: absolute;
+        z-index: 2;
+        top: 47%;
+        left: 79px;
+    }
+    .swiper-pagination-bullet {
+        display: block;
+        background: unset;
+        width: unset;
+        height: unset;
+        margin: 0 0px 15px !important;
+        font-weight: 800px !important;
+        border-radius: 0;
+        opacity: 1;
+        @include transition3;
+        &.swiper-pagination-bullet-active {
+            width: 75px;
+            height: 75;
+            border-radius: 50%;
+            position: relative;
+            background: $color-1;
+            margin: 10px 0px 35px !important;
+            color: $color-2;
+            font-size: 39.7px;
+            font-weight: 800px !important;
+            line-height: 75px;
+            @include transition3;
+            box-shadow: 0px 16px 41px 0px rgba(0, 15, 26, 0.21);     
+        }
+    }
+
+}
+
+
+
+// slider home 01
+.slider {
+    position: relative;
+    background: url(./../../assets/images/slider/bg-slider.jpg) scroll right/auto;
+    background-repeat: no-repeat;
+    .slider-item {
+        position: relative;
+        padding-left: 18.2%;
+        .content {
+            padding: 318px 0px 157px 0px;
+            .heading {
+                margin-bottom: 60px;
+            }
+            .sub-title {
+                font-weight: 600;
+                font-size: 21.5px;
+                margin-bottom: 18px;
+                letter-spacing: -0.2px;
+            }
+            h1 {
+                cursor: text;
+                margin-bottom: 58px;
+                letter-spacing: 12.2px;
+            }
+            .s-button {
+                font-size: 21.5px;
+                color: $color-3;
+                font-weight: 500;
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                margin-left: 157px;
+                letter-spacing: -0.2px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 39px;
+                    height: 2px;
+                    margin-left: -54px;
+                    background-color: #b8a47e;
+                }
+                &::after {
+                    content: "\f054";
+                    font-family: 'Font Awesome 5 Pro';
+                    font-size: 16px;
+                    font-weight: 400;
+                    position: absolute;
+                    right: -25px;
+                }
+            }
+        }
+        .images {
+            position: absolute;
+            top: 83px;
+            right: -100px;
+        }
+    }
+}
+
+
+// animate slider
+.slider-item .heading  {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.swiper-slide-active .slider-item .heading   {
+    opacity           : 1;
+    visibility        : visible;
+    -webkit-transition: transform 600ms ease, opacity 600ms ease;
+    -moz-transition   : transform 600ms ease, opacity 600ms ease;
+    -ms-transition    : transform 600ms ease, opacity 600ms ease;
+    -o-transition     : transform 600ms ease, opacity 600ms ease;
+    transition        : transform 600ms ease, opacity 600ms ease;
+    transition-delay  : 600ms;
+}
+
+.swiper-slide-active .slider-item .heading  {
+    transform: translateY(0) !important;
+}
+
+
+
