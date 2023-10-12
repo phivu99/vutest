@@ -9,11 +9,12 @@
 }
 
 .swiper-button-next:after {
-    content: "\f077";
+    content: "\f078";
 }
 
 .swiper-button-prev:after {
-    content: "\f078";
+    
+    content: "\f077";
 }
 
 .swiper-button-next,
@@ -40,10 +41,8 @@
 }
 
 .swiper-button-next {
-    margin-bottom: 45px;
-}
-
- .swiper-button-prev {
+    margin-top: -16px;
+    order: 2;
     &::before {
         content: "";
         position: absolute;
@@ -52,15 +51,22 @@
         margin-bottom: -84px;
         background-color: #b8a47e;
     }
-   
+}
+
+ .swiper-button-prev {
+    order: 1;
+    margin-bottom: 78px;
+}
+
+.button-custom-slider {
+    position: absolute;
+    top: 23.5%;
+    left: 39px;
+    display: grid;
 }
 
 //  swiper pagination slider
-.button-custom-slider {
-    position: absolute;
-    top: 29%;
-    left: 39px;
-}
+
 .pagi-slider {
     .swiper-pagination {
         position: absolute;
@@ -74,7 +80,7 @@
         width: unset;
         height: unset;
         margin: 0 0px 15px !important;
-        font-weight: 800px !important;
+        color: #878787;
         border-radius: 0;
         opacity: 1;
         @include transition3;
@@ -87,7 +93,6 @@
             margin: 10px 0px 35px !important;
             color: $color-2;
             font-size: 39.7px;
-            font-weight: 800px !important;
             line-height: 75px;
             @include transition3;
             box-shadow: 0px 16px 41px 0px rgba(0, 15, 26, 0.21);     

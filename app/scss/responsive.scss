@@ -44,6 +44,20 @@
   .drifter-section .heading-section {
     margin-right: 35.1%;
   }
+
+  #footer {
+    .widget-contact {
+      padding: 12px 0px 0 15px;
+    }
+  }
+
+  .box-menu {
+    padding-left: 40px;
+    li a {
+      padding-right: 50px;
+    }
+  }
+  
   
 }
 
@@ -85,7 +99,7 @@
   }
 
   .shop-section .wrap-shop {
-    margin: 0 15px;
+    margin: 0;
   }
 
   .slider {
@@ -98,6 +112,17 @@
       color: $color-1;
     }
   }
+
+  #footer {
+    .widget-form {
+      padding: 9px 0px 0;
+    }
+  }
+
+  .box-menu.style {
+    margin-left: 0;
+  }
+  
  
 
 }
@@ -169,6 +194,8 @@
         padding: 0 0px 0 15px;
       }
     }
+
+    
 
   
   
@@ -282,7 +309,7 @@
         }
         h3 {
           margin-right: 0;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
         }
         h1 {
           position: unset;
@@ -297,10 +324,11 @@
       margin: 80px 0;
       .heading-section .box-heading {
         padding: 40px 15px 35px 15px;
-        display: block;
+        display: grid;
         .text-box {
           width: 100%;
           margin-right: 0;
+          order: 2;
         }
         .icon-box {
           left: unset;
@@ -310,8 +338,8 @@
           background-color: $color-1;
         }
         h3 {
-          margin-right: 0;
-          margin-bottom: 15px;
+          margin:0 0 20px 0;
+          order: 1;
         }
         h1 {
           position: unset;
@@ -345,6 +373,31 @@
     .shop-section {
       padding-bottom: 60px;
     }
+
+    .box-menu {
+      padding-left: 0;
+      li a::before,
+      li a::after {
+        display: none;
+      }
+      &.style ul {
+        justify-content: center;
+        li a {
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .widget-bottom-footer {
+      padding: 25px 0 18px;
+      text-align: center;
+      .title-bottom {
+        margin-bottom: 10px;
+      }
+    }
+
+
   
 
   }
@@ -357,6 +410,10 @@
     }
     .lh-70 {
       line-height: 60px;
+    }
+
+    .mobile-button {
+      top: 25%;
     }
 
     .slider {
@@ -381,8 +438,8 @@
       }
       .images-2 {
         margin-top: 0;
-        border-left: 0;
-        margin-bottom: 20px;
+        border: 0;
+        margin-bottom: 40px;
       }
       .images-3 {
         border: unset;
@@ -405,8 +462,11 @@
           }
         }
       }
-      .content.content-3 h3 {
-        margin-bottom: 20px;
+      .content.content-3 {
+        padding: 0;
+        h3 {
+          margin-bottom: 20px;
+        }
       }
       .content {
         &::before,
@@ -428,6 +488,44 @@
         padding: 0;
         .images {
           margin-bottom: 40px;
+        }
+      }
+      &.inner-4 {
+        padding: 0;
+      }
+    }
+    .collections-section .wrap-collections .box {
+      .step.step-1 {
+        display: block;
+        text-align: center;
+        &::after {
+          display: none;
+        }
+      }
+      .step.step-2 {
+        margin-right: 0;
+      }
+      .step.step-3 {
+        text-align: center;
+      }
+    }
+
+    #footer {
+      text-align: center;
+      .logo-footer {
+        margin-bottom: 10px;
+      }
+      .widget-contact {
+        padding: 12px 0px 10px 0px;
+      }
+      .widget-form h3 {
+        margin-bottom: 6px;
+      }
+      .box-menu ul {
+        justify-content: center;
+        li a {
+          padding-left: 15px;
+          padding-right: 15px;
         }
       }
     }

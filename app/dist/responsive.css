@@ -39,6 +39,15 @@
   .drifter-section .heading-section {
     margin-right: 35.1%;
   }
+  #footer .widget-contact {
+    padding: 12px 0px 0 15px;
+  }
+  .box-menu {
+    padding-left: 40px;
+  }
+  .box-menu li a {
+    padding-right: 50px;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .main-header .main-menu .navigation > li:nth-child(2) > a,
@@ -70,7 +79,7 @@
     padding-right: 100px;
   }
   .shop-section .wrap-shop {
-    margin: 0 15px;
+    margin: 0;
   }
   .slider {
     background-size: cover;
@@ -81,6 +90,12 @@
   }
   .slider .slider-item .content .s-button {
     color: #fff;
+  }
+  #footer .widget-form {
+    padding: 9px 0px 0;
+  }
+  .box-menu.style {
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -232,7 +247,7 @@
   }
   .daypack-section .heading-section .box-heading h3 {
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .daypack-section .heading-section .box-heading h1 {
     position: unset;
@@ -244,11 +259,12 @@
   }
   .drifter-section .heading-section .box-heading {
     padding: 40px 15px 35px 15px;
-    display: block;
+    display: grid;
   }
   .drifter-section .heading-section .box-heading .text-box {
     width: 100%;
     margin-right: 0;
+    order: 2;
   }
   .drifter-section .heading-section .box-heading .icon-box {
     left: unset;
@@ -258,8 +274,8 @@
     background-color: #fff;
   }
   .drifter-section .heading-section .box-heading h3 {
-    margin-right: 0;
-    margin-bottom: 15px;
+    margin: 0 0 20px 0;
+    order: 1;
   }
   .drifter-section .heading-section .box-heading h1 {
     position: unset;
@@ -286,6 +302,27 @@
   .shop-section {
     padding-bottom: 60px;
   }
+  .box-menu {
+    padding-left: 0;
+  }
+  .box-menu li a::before,
+  .box-menu li a::after {
+    display: none;
+  }
+  .box-menu.style ul {
+    justify-content: center;
+  }
+  .box-menu.style ul li a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .widget-bottom-footer {
+    padding: 25px 0 18px;
+    text-align: center;
+  }
+  .widget-bottom-footer .title-bottom {
+    margin-bottom: 10px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .fs-60 {
@@ -293,6 +330,9 @@
   }
   .lh-70 {
     line-height: 60px;
+  }
+  .mobile-button {
+    top: 25%;
   }
   .slider .slider-item .content {
     padding: 200px 15px 90px 15px;
@@ -313,8 +353,8 @@
   }
   .collections-section .wrap-collections .box .inner .images-2 {
     margin-top: 0;
-    border-left: 0;
-    margin-bottom: 20px;
+    border: 0;
+    margin-bottom: 40px;
   }
   .collections-section .wrap-collections .box .inner .images-3 {
     border: unset;
@@ -336,6 +376,9 @@
     content: "";
     position: absolute;
     width: 100%;
+  }
+  .collections-section .wrap-collections .box .inner .content.content-3 {
+    padding: 0;
   }
   .collections-section .wrap-collections .box .inner .content.content-3 h3 {
     margin-bottom: 20px;
@@ -359,6 +402,41 @@
   }
   .collections-section .wrap-collections .box .inner.inner-3 .images {
     margin-bottom: 40px;
+  }
+  .collections-section .wrap-collections .box .inner.inner-4 {
+    padding: 0;
+  }
+  .collections-section .wrap-collections .box .step.step-1 {
+    display: block;
+    text-align: center;
+  }
+  .collections-section .wrap-collections .box .step.step-1::after {
+    display: none;
+  }
+  .collections-section .wrap-collections .box .step.step-2 {
+    margin-right: 0;
+  }
+  .collections-section .wrap-collections .box .step.step-3 {
+    text-align: center;
+  }
+  #footer {
+    text-align: center;
+  }
+  #footer .logo-footer {
+    margin-bottom: 10px;
+  }
+  #footer .widget-contact {
+    padding: 12px 0px 10px 0px;
+  }
+  #footer .widget-form h3 {
+    margin-bottom: 6px;
+  }
+  #footer .box-menu ul {
+    justify-content: center;
+  }
+  #footer .box-menu ul li a {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media only screen and (max-width: 400px) {

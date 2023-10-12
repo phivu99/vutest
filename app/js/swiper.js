@@ -21,7 +21,7 @@ var swiper =  new Swiper(".mainslider", {
         clickable: true,
 
         renderBullet: function (index, className) {
-            return '<span class="' + className + '">0' + (index + 1) + '</span>';
+            return '<span class="' + className + ' fw-6">0' + (index + 1) + '</span>';
         },
     },
 });
